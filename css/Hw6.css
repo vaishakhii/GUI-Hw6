@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/**
+ Name: Vaishakhi Patel, vpatel@cs.uml.edu
+ Computer Science Department, UMass Lowell
+ Comp.4610, GUI Programming I
+ File:
+ Created: 21-Nov-2017
+ Last updated by VP: 02-Dec-2017 20:00
+ **/
+
+body{
+    
+    margin: auto;
+}
+
+#Heading{
+    text-align: center;
+}
+
+.container{
+    width: auto;
+    margin: auto;
+}
+
+.content{
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/**
+ This is where I styled the title bar (below the title)
+ **/
+.title_bar {
+    
+    width: auto;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 10px;
+}
+
+.common_info input{
+    margin-left: 30px;
+}
+
+/**
+ I've made these adjustments beacause I want all textboxes to be aligned together
+ **/
+
+#price-value input{
+    margin-left: 55px !important;
+}
+
+#price-value-each{
+    margin-left: 83px !important;
+}
+
+#price-value-each input{
+    margin-left: 13px !important;
+}
+
+#mpg-value input{
+    margin-left: 3px !important;
+}
+
+#mpg-value-each{
+    margin-left: 65px !important;
+}
+
+#mpg-value-each input{
+    margin-left: 30px !important;
+}
+
+#miles_driven {
+    margin-left: 69px !important;
+}
+
+#months {
+    margin-left: 165px !important;
+}
+
+#down_payment {
+    margin-left: 88px !important;
+}
+
+#interest {
+    margin-left: 143px !important;
+}
+
+#incentives {
+    margin-left: 130px !important;
+}
+
+#gallon_price {
+    margin-left: 56px !important;
+}
+
+/**
+ This is where I've styled my table
+ **/
+
+.table{
+    
+    font-size:15px;
+    margin: 0 auto;
+    text-align:center;
+    border: 2px;
+    border-width:5px;
+    border-style:double;
+    
+}
+
+#rowHeader, #colHeader, .cells {
+    
+    text-align: center;
+}
+
+td.cells:hover {
+    background-color: #99ccff;
+    transition: all 0.2s ease 0s;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+td, th {
+    border: 1px solid;
+}
+
+#paramform {
+  margin-left: 100px;
+}
+
+
+#param-sub {
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+.tag-parameters{
+  margin-left: 100px;
+}
+
+

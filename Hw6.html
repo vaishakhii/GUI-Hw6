@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Car Cost Calculator</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <link rel="stylesheet" type="text/css" href="css/navigation-bar.css">
+  <link rel="stylesheet" type="text/css" href="css/hw6.css">
+  <link rel="stylesheet" type="text/css" href="css/slider.css">
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+      // This function is used to avoid conflict of different version of jquery
+      var $d = jQuery.noConflict();
+  </script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+  <script>
+      // This function is used to avoid conflict of different version of jquery
+      var $v = jQuery.noConflict();
+  </script>
+
+</head>
+<body>
+<h1 style="color: chocolate;color-adjust: exact;">
+      Car Cost Calculator<br>
+    </h1>
+<br>
+<div id="tabs">
+  <ul class="tag-list">
+    <li><a  class="active" href="#tab-params">Parameter-value</a></li>
+    <button id='all-delete-confirm-tab' class='delete-con-all-tab-btn'>Delete Selected Tab</button>
+    <button id='all-delete-tab' class='delete-all-tab-btn'>Select TABS</button>
+  </ul>
+  
+  <div id="tab-params">
+   <br><br>
+   <label> PARAMETERS :-</label>
+   <br><br>
+   <label for="comparison_name"> Comparison Title: </label>
+   <input id="comparison_name" type='text' name="comp_name">
+   <br><br>
+
+   <form id="paramform" onsubmit="return false">
+      <div id="price-value">
+         <label for="price_count"> Price Comparison Count: </label>
+         <input id="price_count" type='number' name="price_count">
+         <button id="price_count_btn" class="price_count">Enter Price</button>
+         <div id="price_count_slider" class="slidecontainer"></div>
+         <br>
+         <br>
+         <div id="price-value-each">
+         </div>
+      </div>
+
+      <div id="mpg-value">
+         <label for="mpg_count"> Miles/Gallon Comparison Count: </label>
+         <input id="mpg_count" type='number' name="mpg_count">
+         <button id="mpg_count_btn" class="price_count">Enter MPG</button>
+         <div id="mpg_count_slider" class="slidecontainer"></div>
+         <br>
+         <br>
+         <div id="mpg-value-each">
+         </div>
+      </div>
+
+      <div>
+         <label for="miles_driven"> Miles driven per year : </label>
+         <input id="miles_driven" name="miles_driven" type='number'>
+         <div id="miles_driven_slider" class="slidecontainer"></div>
+         <br>
+         <br>
+      </div>
+
+      <div>
+         <label for="months"> Months : </label>
+         <input id="months" name="months" type='number'>
+         <div id="months_slider" class="slidecontainer"></div>
+         <br>
+         <br>
+      </div>
+
+      <div>
+         <label for="down_payment"> Down Payment % : </label>
+         <input id="down_payment" name="down_payment" type='number'>
+         <div id="down_payment_slider" class="slidecontainer"></div>
+         <br>
+         <br>
+      </div>
+
+      <div>
+         <label for="interest"> Interest % : </label>
+         <input id="interest" name="interest" type='number'>
+         <div id="interest_slider" class="slidecontainer"></div>
+         <br>
+         <br>
+      </div>
+
+      <div>
+         <label for="incentives"> Incentives $ : </label>
+         <input id="incentives" name="incentives" type='number'>
+         <div id="incentives_slider" class="slidecontainer"></div>
+         <br>
+         <br>
+      </div>
+
+      <div>
+         <label for="gallon_price"> Current Gallon Price $ : </label>
+         <input id="gallon_price" name="gallon_price" type='number'>
+         <div id="gallon_price_slider" class="slidecontainer"></div>
+
+
+         <br>
+         <br>
+      </div>
+      <label id="price-error" class="price-error">Please, Enter Require Price Value for CAR / MPG </label>
+      <label id="comp-name-error" class="price-error">Please, Enter Require Comparison Name</label>
+      <button id="param-sub" class="param-sub">Submit</button>
+   </form>
+
+  </div>
+</div>
+ 
+    <script src="tab-data-list.js"></script>
+    <script src="slider-data-list.js"></script>
+    <script src="param-data-list.js"></script>
+ 
+</body>
+</html>

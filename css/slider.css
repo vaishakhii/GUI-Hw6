@@ -1,0 +1,46 @@
+/**
+ Name: Vaishakhi Patel, vpatel@cs.uml.edu
+ Computer Science Department, UMass Lowell
+ Comp.4610, GUI Programming I
+ File:
+ Created: 21-Nov-2017
+ Last updated by VP: 02-Dec-2017 20:00
+ **/
+
+.slidecontainer {
+    background-color: black;
+    width: 185px;
+    margin-left: 225px;
+    margin-top: 20px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
